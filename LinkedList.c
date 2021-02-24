@@ -51,7 +51,7 @@ struct link * newLink(int data)
 // **************************************************
 int displayLinkedList(struct linkedList * LinkedList)
 {
-    if (LinkedList->head == NULL || LinkedList->tail || LinkedList->size < 0){return EXIT_FAILURE;}
+    if (LinkedList->head == NULL || LinkedList->tail == NULL || LinkedList->size < 0){return EXIT_FAILURE;}
 
     struct link * tmp = LinkedList->head;
 
