@@ -33,7 +33,7 @@ struct link * newLink(int data)
 {
     struct link * tmp;
 
-    tmp = (struct link *) malloc(sizeof(struct linkedList));
+    tmp = (struct link *) malloc(sizeof(struct link));
 
     if(tmp != NULL)
     {

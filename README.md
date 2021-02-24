@@ -1,6 +1,6 @@
 # linkedLists
 
-> Code with basic functions for linked lists
+> Basic functions for linked lists
 
 ## Functions :
 
