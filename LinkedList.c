@@ -158,6 +158,16 @@ int switchLink(struct linkedList * LinkedList, struct link * fLink, struct link 
 {
     if (LinkedList == NULL || LinkedList->head == NULL || LinkedList->tail == NULL || LinkedList->size < 2 || fLink == NULL || sLink == NULL || sLink != fLink->nextLink){return EXIT_FAILURE;}
 
+    // If the first link is the head and the second link is the tail
+    if (fLink == LinkedList->head && sLink == LinkedList->tail)
+    {
+        sLink->nextLink = fLink;
+        fLink->nextLink = NULL;
+        LinkedList->head = sLink;
+        LinkedList->tail = fLink;
+        return EXIT_SUCCESS;
+    }
+    
     // If the first link is the head
     if (fLink == LinkedList->head)
     {
