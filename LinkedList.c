@@ -194,7 +194,7 @@ int switchLink(struct linkedList * LinkedList, struct link * fLink, struct link 
         return EXIT_SUCCESS;
     }
 
-    // If both arstruct link * previous = LinkedList->head
+    // If both links are in the middle
     if (fLink != LinkedList->head && sLink != LinkedList->tail && fLink->nextLink == sLink)
     {
         struct link * previous = LinkedList->head;
